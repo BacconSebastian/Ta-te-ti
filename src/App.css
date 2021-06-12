@@ -1,0 +1,67 @@
+.game-board{
+  padding-bottom: 60px;
+}
+
+.App h1,
+.App p{
+  text-align: center;
+  margin-top: 60px;
+  color: #4b2200;
+  text-shadow: 1px 1px #ff9b49;
+}
+
+.App p{
+  margin: 0;
+}
+
+.square{
+  background-color: #F8AF75;
+  border: 1px solid #ff9b49;border-radius: 5px;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 2px;
+}
+
+@media (max-width:768px) {
+  .square{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+}
+
+.board-row::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+.game{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+  padding-left: 10px;
+}
+
+.game-info{
+  margin-left: 20px;
+}
+
+.game-info div{
+  color: #ff9b49;
+  text-shadow: 1px 1px #4b2200;
+  border-bottom: 1px solid #4b2200;
+}
+
+.status{
+  margin-bottom: 10px;
+}
